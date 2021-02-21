@@ -16,7 +16,7 @@ def caps(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text=text_caps)
 
 def startBot():
-    updater = Updater(token = '1687678296:AAEMuewFqJofLEu9YR8g6sVjAp0-rf9jWIM', use_context=True)
+    updater = Updater(token = '', use_context=True)
     dispatcher = updater.dispatcher
     echoHandelr = MessageHandler(Filters.text & (~Filters.command), echo) # MessageHandler()의 첫번쨰 매개변수는 필터이다.
     caps_handler = CommandHandler('caps', caps)
